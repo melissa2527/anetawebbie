@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    display: flex;
+    width: 100%;
+    font-family: 'Alegreya Sans';
+    font-weight: 400;
+}
+/* navigation elements below */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10vh;
+    background-color: white;
+}
+.nav li {
+    list-style-type: none;
+    background-color: #232323;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+#logo {
+    background-color: white;
+}
+#portfolio {
+    background-color: #54BE90;
+    color: #232323;
+}
+
+/* name section elements below */
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-image: url('meadow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* if background-size contain doesn't work, use cover */
+}
+.name h1, .name h2 {
+    justify-content:center;
+    align-items: center;
+}
+.name h1 {
+    font-size: 8vh;
+}
+.name h2 {
+    font-size: 6.5vh;
+    padding-bottom: 50px;
+}
+.aneta {
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size: 9vh;
+    color: #54be90;
+    font-weight: 800;
+    text-shadow: 3px 3px black;
+}
+
+/* statement elements below */
+.statement {
+    /* add */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#statement {
+    /* flex-direction: row; */
+    color: #232323;
+    text-align: center;
+    padding: 10vh;
+    line-height: 130%;
+}
+.circles {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    flex-direction: row;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #232323;
+    height: 50vh;
+}
+.circles h3 {
+    align-content: center;
+    justify-content: center;
+    color: #54BE90;
+}
+.circles p {
+    color: white;
+    align-items: flex-end;
+}
+
+/* skills elements below */
+.skills {
+    display: flex;
+    padding: 15vh 10vh;
+    flex-direction: column;
+}
+
+.skills h1 {
+    text-align: center;
+    color: #54BE90;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.skills li {
+    display: flex;
+    border: 1px solid #232323;
+    flex-direction: column;
+    align-content: space-between;
+    padding-top: 1px;
+    list-style-type: none;
+  
+    
+}
+SKILLS {
+
+}
+
+/* portfolio elements below */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+.portfolio h1 {
+    text-align: center;
+
+}
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+#one, #two, #three, #four, #five, #six {
+    flex-direction: column;
+}
+colors
+color: green#54BE90;
+White: #ffffff
+color: #EBEBEB;
+Text grey: #444444
+Dark grey: #232323
+
+/* main axis will be vertical!!! */
+justify-content: flex-start (begin at the beginning of the axis)
+align-items: center (arranges them vertically)
