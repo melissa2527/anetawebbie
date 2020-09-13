@@ -8,6 +8,8 @@ html {
     font-family: 'Alegreya Sans';
     font-weight: 400;
 }
+
+
 /* navigation elements below */
 nav {
     display: flex;
@@ -28,7 +30,7 @@ nav :hover {
     padding: 5px;
     text-align: center;
     justify-content: center;
-    
+    margin-bottom: 5px;  
 }
 nav li a {
     color: white;
@@ -47,6 +49,8 @@ nav li :hover {
 #portfolio :hover {
     color: #232323;
 }
+
+
 
 /* name section elements below */
 .name {
@@ -83,15 +87,14 @@ nav li :hover {
     text-shadow: 3px 3px black;
 }
 
+
+
 /* statement elements below */
 .statement {
-    /* add */
-    /* display: flex; */
     flex-direction: column;
     background-color: white;
 }
 #statement {
-    /* flex-direction: row; */
     color: #232323;
     text-align: center;
     padding: 10vh;
@@ -122,7 +125,12 @@ nav li :hover {
     line-height: 1.5;
     padding-bottom: 20px;
 }
-/* .semicircle {
+.semicircle {
+    display: flex;
+    background-color: #232323;
+    flex-direction: row;
+}
+.half {
     color: white;
     height: 125px;
     width: 250px;
@@ -130,10 +138,10 @@ nav li :hover {
     justify-items: flex-start; 
     padding-left: 10vw;
     padding-right: 10vw;
-    position: absolute;
-    flex-direction: row;
-    background-color:#232323;
-} */
+    background-color: #232323;
+}
+
+
 
 /* skills elements below */
 .skills {
@@ -156,6 +164,7 @@ nav li :hover {
 }
 
 
+
 /* portfolio elements below */
 .portfolio {
     background-color: #54BE90;
@@ -176,11 +185,11 @@ nav li :hover {
     justify-content: space-around;
     align-content: center;
     width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
 }
 #one, #two, #three, #four, #five, #six {
-    /* flex-direction: column;
-    border: 1px white;
-    /* justify-content: space-between; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,17 +239,16 @@ nav li :hover {
 }
 
 
+
+
 /* about me section below */
 .aboutme {
-    /* display: flex;
-    flex-direction: column; */
     background-color: lightgray;
-    padding: 70px;
+    padding: 70px 40px;
 }
 .aboutme h1 {
     text-align: center;
     font-size: 3em;
-    align-items: flex-start;
     padding-bottom: 50px;
     text-transform: uppercase;
 }
@@ -251,7 +259,7 @@ nav li :hover {
     padding-bottom: 50px;
 }
 .idpic {
-    /* flex-basis: 30%;  */
+    flex-basis: 30%; 
 }
 .mepar {
     /* width: 50%;
@@ -301,10 +309,8 @@ nav li :hover {
 
 /* contact form below this line */
 .contactform {
-    background-color: #54BE90;
-    display: flex;
-    flex-direction: column;
-    
+    background-color: #54BE90;  
+    color: white;
 }
 
 .contactform h1 {
@@ -313,39 +319,51 @@ nav li :hover {
     padding-top: 70px;
     font-size: 3em;
     text-transform: uppercase;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 .contactinfo {
     padding: 60px;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
 }
-.contactform li {
+.enterinfo {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
     color: white;
-    list-style-type: none;
-    display: flex;
-    
+    border: none;
+    width: 400px;
+    border-bottom: 2px dashed white;
+    line-height: 250%;
 }
 .textbox {
-    /* padding: 70px; */
-    max-width: 70%;
+    width: 70%;
     min-width: 70%;
-    max-height: 20vh;
-    min-height: 20vh;
-    justify-items: center;
-    /* alig */
+    height: 300px;
+    margin: auto;
 }
-
-    border-bottom: 1 px solid white;
-
+.contactbutton {
+    background-color: #232323;
+    border-radius: 5px;
+    padding: 0.25em 2em;
+    margin: 5px;
+    color: white;
+    margin: auto;
+    text-decoration: none;
+}
+/* .contactbutton :hover {
+    background-color: white;
+    color: #232323; */
+}
 /* footer below this line */
 footer {
-    background-color: lightgray;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-items: center;
-    align-content: center; */
+    background-color: whitesmoke;
 }
+
 .footer h1 {
     text-align: center;
     text-transform: uppercase;
@@ -354,11 +372,18 @@ footer {
     padding-bottom: 60px;
     text-align: middle;
 }
+/* .decorated {
+    height: 2px solid #54be54;
+    width: 50px;
+} */
 .footerimg {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-     
+    justify-content: center;  
+}
+.footerimg img {
+    padding-left:15px;
+    padding-right: 15px;
 }
 footer p {
     text-align: center;
@@ -366,19 +391,3 @@ footer p {
     padding-bottom: 60px;
     text-align: middle;
 }
-
-
-/* add images of the three companies */
-colors
-color: green#54BE90;
-White: #ffffff
-color: #EBEBEB;
-Text grey: #444444
-Dark grey: #232323
-
-/* main axis will be vertical!!! */
-justify-content: flex-start (begin at the beginning of the axis)
-align-items: center (arranges them vertically)
-
-/* light gray svg background */
-#C6C0C0
